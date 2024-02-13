@@ -1,5 +1,5 @@
 .image_container {
-    width: 560px;
+    width: 100%;
 }
 
 img {
@@ -9,6 +9,7 @@ img {
 }
 
 .image_buttons_container {
+    width: 30%;
     display: flex;
     justify-content: space-around;
 }
