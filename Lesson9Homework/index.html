@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Exercise 1 -->
+    <div class="container">
+        <textarea class="text"></textarea>
+        <input type="file" accept=".txt" class="file_input" />
+        <button class="btn load" onclick="loadFile()">Read File</button>
+        <p>Total symbols: <span id="total_symbols"></span></p>
+        <p>Total words: <span id="total_words"></span></p>
+        <p>Longest word: <span id="longest_word"></span></p>
+        <p>Shortest word: <span id="shortest_word"></span></p>
+        <p>Average: <span id="average_length"></span></p>
+    </div>
+
+    <!-- Exercise 2 -->
+    <div class="img_container">
+        <input type="file" accept="image/jpeg, image/png, image/jpg, image/gif" class="img_input"
+            onchange="loadImage()">
+        <img src="" alt="ex2pic" id="ex2_img" style="display: none;">
+    </div>
+
+    <!-- Exercise 3 -->
+    <div class="all_type_container">
+        <input type="file" class="all_type_input" onchange="allTypeLoad()">
+        <div class="content_wrapper"></div>
+    </div>
+
+    <script src="script/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.text {
+    width: 650px;
+    height: 180px;
+    resize: none;
+    background-color: aliceblue;
+}
+
+.text:focus {
+    outline: none;
+}
