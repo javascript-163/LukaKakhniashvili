@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="image_container">
+        <img src="images/img.jpg" alt="" id = "image">
+        <div class="image_buttons_container">
+            <button onclick="sizeIncreaser()" class="image_buttons">ფოტოს ზომის გაზრდა</button>
+            <button onclick="sizeReducer()" class="image_buttons">ფოტოს ზომის შემცირება</button>
+        </div>
+    </div>
+    <div class="text_container">
+        <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolore ea impedit modi, tempora libero, rem tempore rerum aliquid necessitatibus iusto esse itaque beatae atque doloremque blanditiis, assumenda iste qui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, unde distinctio recusandae, mollitia, libero pariatur error obcaecati voluptatum similique nesciunt quod soluta. Quam excepturi dolorum consequatur numquam molestias tempora ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iusto quae fuga voluptatibus deleniti ad, quisquam consequatur blanditiis pariatur sit quasi incidunt explicabo expedita aperiam in laboriosam nisi molestias laudantium?</p>
+        <button class="color_buttons red" onclick="colorChanger('red')">Change Color</button>
+        <button class="color_buttons blue" onclick="colorChanger('blue')">Change Color</button>
+        <button class="color_buttons green" onclick="colorChanger('green')">Change Color</button>
+        <button class="color_buttons default" onclick="colorChanger('black')">Default</button>
+    </div>
+    <div class="title_container">
+        <h2 id="title">Javascript</h2>
+        <button onclick="showContent()">ჩვენება</button>
+        <button onclick="hideContent()">დამალვა</button>
+    </div>
+    
+    <script src="script/main.js"></script>
+</body>
+
+</html>
