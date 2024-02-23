@@ -1,0 +1,29 @@
+.container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.input_wrapper {
+    display: flex;
+    column-gap: 10px;
+}
+
+.result_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.wind_img {
+    width: 100px;
+}
+
+.hide {
+    display: none;
+}
