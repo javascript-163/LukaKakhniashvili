@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <script src="https://kit.fontawesome.com/1f82d9d6d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="filter_wrapper">
+            <input type="text" id="searchInput" placeholder="Search apple products" onkeyup="searchProduct()">
+            <i class="fa-solid fa-magnifying-glass" style="color: #74C0FC;"></i>
+        </section>
+
+        <section class="cards_wrapper">
+            <div class="manual_wrapper">
+                <div class="card">
+                    <div class="image_wrapper manual_slider">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <img src="images/laptop_hp.jpeg" alt="hp" class="product_img manual">
+                        <img src="images/laptop_mac.jpeg" alt="mac" class="product_img manual">
+                        <img src="images/laptop_asus.jpeg" alt="asus" class="product_img manual">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <p class="product_name">Laptop</p>
+                </div>
+                <div class="card">
+                    <div class="image_wrapper manual_slider">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <img src="images/tv_samsung.jpeg" alt="samsung tv" class="product_img manual">
+                        <img src="images/tv_lg.jpeg" alt="lg tv" class="product_img manual">
+                        <img src="images/tv_xiaomi.jpeg" alt="xiaomi tv" class="product_img manual">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <p class="product_name">TV</p>
+                </div>
+            </div>
+        <div class="auto_wrapper">
+            <div class="card">
+                <div class="image_wrapper auto_slider">
+                    <img src="images/mobile_iphone.jpeg" alt="iphone" class="product_img auto">
+                    <img src="images/mobile_google.jpeg" alt="pixel" class="product_img auto">
+                    <img src="images/mobile_samsung.jpeg" alt="samsung" class="product_img auto">
+                </div>
+                <p class="product_name">Mobile</p>
+            </div>
+            <div class="card">
+                <div class="image_wrapper auto_slider">
+
+                    <img src="images/tab_blue.jpeg" alt="blue tab" class="product_img auto">
+                    <img src="images/tab_green.jpeg" alt="green tab" class="product_img auto">
+                    <img src="images/tab_purple.jpeg" alt="purple tab" class="product_img auto">
+                </div>
+                <p class="product_name">Tab</p>
+            </div>
+            <div class="card">
+                <div class="image_wrapper auto_slider">
+                    <img src="images/audio_marshall.jpeg" alt="marshall" class="product_img auto">
+                    <img src="images/audio_jbl.jpeg" alt="jbl" class="product_img auto">
+                    <img src="images/audio_polaroid.jpeg" alt="polaroid" class="product_img auto">
+                </div>
+                <p class="product_name">Audio</p>
+            </div>
+        </div>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>
