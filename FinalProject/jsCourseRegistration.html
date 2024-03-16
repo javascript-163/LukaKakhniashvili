@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - რეგისტრაცია</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <a href="dashboard.html" class="nav_logo">CodingLab</a>
+
+                <ul class="nav_items">
+                    <li class="nav_item">
+                        <a href="dashboard.html" class="nav_link">მთავარი</a>
+                    </li>
+                    <li class="nav_item dropdown">
+                        <a href="testPage.html" class="nav_link">კურსები</a>
+                        <div class="dropdown-content">
+                            <ul class="dropdown-content">
+                                <li><a href="testPage.html">HTML & CSS & JS</a></li>
+                                <li><a href="jsCourse.html">Javascript</a></li>
+                                <li><a href="testPage.html">Python</a></li>
+                                <li><a href="testPage.html">C#</a></li>
+                                <li><a href="testPage.html">Java</a></li>
+                                <li><a href="testPage.html">PHP</a></li>
+                            </ul>  
+                        </div>
+                    </li>
+                    <li class="nav_item">
+                        <a href="contact.html" class="nav_link active">კონტაქტი</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="about.html" class="nav_link">ჩვენს შესახებ</a>
+                    </li>
+                </ul>
+                <div id="user-button" class="user-button">
+                    <div class="user-info">
+                        <i class="uil uil-user"></i>
+                        <span class="username" id="dashboard_username"></span>
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div id="dropdown-menu" class="dropdown-menu">
+                        <ul>
+                            <li><a href="#" class="disabled">პარამეტრები</a></li>
+                            <li><a href="index.html">გამოსვლა</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="language-changer">
+                <select id="language-select">
+                    <option value="ge" selected style="color: #000;">GE</option>
+                    <option value="en" style="color: #000;" disabled>EN</option>
+                </select>
+            </div>
+        </header>
+
+        <div class="contact_container">
+            <h1 class="contact_header">Front-End დეველოპმენტი - JavaScript კურსზე რეგისტრაცია</h1>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">სახელი:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="surname">გვარი:</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">ელ-ფოსტა:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" id="submit-btn">გაგზავნა</button>
+            </form>
+        </div>
+        <footer>
+            <i class="uil uil-java-script"></i>
+            <p class="footer_text">Coding Lab</p>
+        </footer>
+        <script src="scripts/dashboard.js"></script>
+        <script src="scripts/contact.js"></script>
+</body>
+
+</html>

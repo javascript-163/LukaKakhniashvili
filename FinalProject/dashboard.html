@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მთავარი</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script src="https://kit.fontawesome.com/1f82d9d6d9.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <a href="dashboard.html" class="nav_logo">CodingLab</a>
+
+                <ul class="nav_items">
+                    <li class="nav_item">
+                        <a href="dashboard.html" class="nav_link active">მთავარი</a>
+                    </li>
+                    <li class="nav_item dropdown">
+                        <a href="testPage.html" class="nav_link">კურსები</a>
+                        <div class="dropdown-content">
+                            <ul class="dropdown-content">
+                                <li><a href="testPage.html">HTML & CSS & JS</a></li>
+                                <li><a href="jsCourse.html">Javascript</a></li>
+                                <li><a href="testPage.html">Python</a></li>
+                                <li><a href="testPage.html">C#</a></li>
+                                <li><a href="testPage.html">Java</a></li>
+                                <li><a href="testPage.html">PHP</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav_item">
+                        <a href="contact.html" class="nav_link">კონტაქტი</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="about.html" class="nav_link">ჩვენს შესახებ</a>
+                    </li>
+                </ul>
+                <div id="user-button" class="user-button">
+                    <div class="user-info">
+                        <i class="uil uil-user"></i>
+                        <span class="username" id="dashboard_username"></span>
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div id="dropdown-menu" class="dropdown-menu">
+                        <ul>
+                            <li><a href="#" class="disabled">პარამეტრები</a></li>
+                            <li><a href="index.html">გამოსვლა</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="language-changer">
+                <select id="language-select">
+                    <option value="ge" selected style="color: #000;">GE</option>
+                    <option value="en" style="color: #000;" disabled>EN</option>
+                </select>
+            </div>
+        </header>
+
+        <section class="slider">
+            <div id="slider-container" class="slider-container">
+                <img src="images/bg.jpg" alt="Image 1" class="slider-image active">
+                <img src="images/bg2.png" alt="Image 2" class="slider-image">
+                <img src="images/bg3.jpg" alt="Image 3" class="slider-image">
+            </div>
+            <div id="dots-container" class="dots-container">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+        <section class="dashboard_section">
+            <div class="ip_address">
+                <button id="toggleIpBtn">IP მისამართის ჩვენება</button>
+                <div id="ipAddress"></div>
+            </div>
+            <div class="online_courses">
+                <h1>ონლაინ კურსები</h1>
+                <section class="card-section">
+                    <div class="card-container">
+                        <a href="testPage.html">
+                            <div class="card card1">
+                                <h2>HTML & CSS & JS</h2>
+                                <p>16 წლიდან</p>
+                            </div>
+                        </a>
+                        <a href="jsCourse.html">
+                            <div class="card card2">
+                                <h2>JS (სრული კურსი)</h2>
+                                <p>16 წლიდან</p>
+                            </div>
+                        </a>
+                        <a href="testPage.html">
+                            <div class="card card3">
+                                <h2>Python</h2>
+                                <p>17 წლიდან</p>
+                            </div>
+                        </a>
+                        <a href="testPage.html">
+                            <div class="card card4 additional_cards">
+                                <h2>C#</h2>
+                                <p>18 წლიდან</p>
+                            </div>
+                        </a>
+                        <a href="testPage.html">
+                            <div class="card card5 additional_cards">
+                                <h2>Java</h2>
+                                <p>18 წლიდან</p>
+                            </div>
+                        </a>
+                        <a href="testPage.html">
+                            <div class="card card6 additional_cards">
+                                <h2>PHP</h2>
+                                <p>18 წლიდან</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <button id="toggle-cards-btn">მეტის ჩვენება</button>
+            </div>
+        </section>
+
+        <section class="details">
+            <h1>?გსურთ, მიიღოთ დეტალური ინფორმაცია ყველა კითხვაზე</h1>
+            <h3>:დაგვიკავშირდით</h3>
+            <div class="contact_send_to">
+                <div class="contact_mail">
+                    <a href="mailto:codinglab@gmail.com" class="mail_link">codinglab@gmail.com</a>
+                    <a href="mailto:codinglab@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="contact_phone">
+                    <a href="tel:+(32)2 20 20 30" class="phone_link">30 20 20 2(32)+</a>
+                    <a href="tel:+(32)2 20 20 30">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </a>
+                </div>
+                <div class="contact_socials">
+                    <a href="https://www.whatsapp.com" target="_blank">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                </div>
+                <p class="">ან გამოგვიგზავნეთ <a href="contact.html">შეტყობინება</a></p>
+            </div>
+        </section>
+
+        <footer>
+            <i class="uil uil-java-script"></i>
+            <p class="footer_text">Coding Lab</p>
+        </footer>
+    </div>
+
+    <script src="scripts/dashboard.js"></script>
+</body>
+
+</html>
