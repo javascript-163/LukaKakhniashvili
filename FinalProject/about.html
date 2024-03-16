@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩვენს შესახებ</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script src="https://kit.fontawesome.com/1f82d9d6d9.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <a href="dashboard.html" class="nav_logo">CodingLab</a>
+
+                <ul class="nav_items">
+                    <li class="nav_item">
+                        <a href="dashboard.html" class="nav_link">მთავარი</a>
+                    </li>
+                    <li class="nav_item dropdown">
+                        <a href="testPage.html" class="nav_link">კურსები</a>
+                        <div class="dropdown-content">
+                            <ul class="dropdown-content">
+                                <li><a href="testPage.html">HTML & CSS & JS</a></li>
+                                <li><a href="jsCourse.html">Javascript</a></li>
+                                <li><a href="testPage.html">Python</a></li>
+                                <li><a href="testPage.html">C#</a></li>
+                                <li><a href="testPage.html">Java</a></li>
+                                <li><a href="testPage.html">PHP</a></li>
+                            </ul>  
+                        </div>
+                    </li>
+                    <li class="nav_item">
+                        <a href="contact.html" class="nav_link">კონტაქტი</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="about.html" class="nav_link active">ჩვენს შესახებ</a>
+                    </li>
+                </ul>
+                <div id="user-button" class="user-button">
+                    <div class="user-info">
+                        <i class="uil uil-user"></i>
+                        <span class="username" id="dashboard_username"></span>
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div id="dropdown-menu" class="dropdown-menu">
+                        <ul>
+                            <li><a href="#" class="disabled">პარამეტრები</a></li>
+                            <li><a href="index.html">გამოსვლა</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="language-changer">
+                <select id="language-select">
+                    <option value="ge" selected style="color: #000;">GE</option>
+                    <option value="en" style="color: #000;" disabled>EN</option>
+                </select>
+            </div>
+        </header>
+
+        <main>
+            <h1>ჩვენს შესახებ</h1>
+            <div class="line"></div>
+            <div class="section">
+                <img src="images/about_background1.svg" alt="Development">
+                <div class="section-content">
+                    <h2 class="section-title">Our Development Services</h2>
+                    <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel eros ut ligula aliquam malesuada ac vel leo.</p>
+                    <p id="development" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laborum natus, rem quis iusto dolorem corporis neque veritatis quibusdam nobis? Possimus quidem sint blanditiis natus iusto facilis non nulla consectetur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos velit quia cupiditate et doloremque nulla, dolores quo totam ipsa deleniti, veritatis, esse sapiente quas. Libero amet autem quos magni omnis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, quis unde! Fuga atque quibusdam, doloribus repellat earum natus facere ipsam est et officiis. Blanditiis id nobis ad adipisci aperiam provident.</p>
+                    <button class="read-more-btn-1" onclick="toggleVisibilityFirst()">მაჩვენე მეტი</button>
+                </div>
+            </div>
+        
+            <div class="section2">
+                <img src="images/about_background2.svg" alt="Online Courses">
+                <div class="section-content">
+                    <h2 class="section-title">Our Online Courses</h2>
+                    <p class="section-description">Sed ultricies nisl auctor, posuere ligula ut, sollicitudin ex. Aliquam erat volutpat.</p>
+                    <p id="courses" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, omnis minima! Neque eos ipsum obcaecati quia porro ex eum doloremque repudiandae? Voluptatum quos commodi molestiae libero nulla nemo? Quisquam, alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nobis corrupti quasi mollitia blanditiis debitis cum molestiae, iusto odit quos praesentium dignissimos! Repellat voluptatum fugiat eos eligendi, beatae numquam animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corporis delectus molestiae, officiis dicta neque deserunt animi accusantium. Unde magnam tenetur necessitatibus in ex illum corporis, veniam aperiam dignissimos provident.</p>
+                    <button class="read-more-btn-2" onclick="toggleVisibilitySecond()">მაჩვენე მეტი</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <i class="uil uil-java-script"></i>
+            <p class="footer_text">Coding Lab</p>
+        </footer>
+    </div>
+
+    <script src="scripts/dashboard.js"></script>
+    <script src="scripts/aboutUs.js"></script>
+</body>
+
+</html>

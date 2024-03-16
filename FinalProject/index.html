@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Lab</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html" class="nav_logo">CodingLab</a>
+        <button class="button login_register_btn" id="form-open">შესვლა</button>
+      </nav>
+      <div id="language-changer">
+        <select id="language-select">
+          <option value="ge" selected style="color: #000;">GE</option>
+          <option value="en" style="color: #000;" disabled>EN</option>
+        </select>
+      </div>
+    </header>
+
+
+    <!-- Home -->
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="#" onsubmit="return handleLogin()">
+            <h2>ავტორიზაცია</h2>
+
+            <div class="input_box">
+              <input type="text" id="login_username" placeholder="მომხმარებლის სახელი" required />
+              <i class="uil uil-user username"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" id="login_pass" placeholder="პაროლი" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <p class="login_error"></p>
+            <button type="submit" class="button">ავტორიზაცია</button>
+            <div class="login_signup">არ გაქვთ ანგარიში? გაიარე <a href="#" id="signup">რეგისტრაცია</a></div>
+          </form>
+        </div>
+
+        <div class="loader" id="loader"></div>
+
+        <!-- Signup From -->
+        <div class="form signup_form">
+          <form action="#" onsubmit="return validate()">
+            <h2>რეგისტრაცია</h2>
+
+            <div class="input_box">
+              <input id="name" type="text" placeholder="სახელი" required />
+              <div id="nameError" class="error-message"></div>
+              <i class="uil uil-user username"></i>
+            </div>
+
+            <div class="input_box">
+              <input id="lastname" type="text" placeholder="გვარი" required />
+              <div id="surnameError" class="error-message"></div>
+              <i class="uil uil-user username"></i>
+            </div>
+
+            <div class="input_box">
+              <input id="username" type="text" placeholder="მომხმარებლის სახელი" required />
+              <div id="usernameError" class="error-message"></div>
+              <i class="uil uil-user username"></i>
+            </div>
+
+            <div class="input_box">
+              <input id="email" type="email" placeholder="ელ-ფოსტა" required />
+              <div id="emailError" class="error-message"></div>
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+
+            <div class="input_box">
+              <input id="pass" type="password" placeholder="პაროლი" required />
+              <div id="passwordError" class="error-message"></div>
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <div class="input_box">
+              <input id="confirmpass" type="password" placeholder="გაიმეორეთ პაროლი" required />
+              <div id="confirmPasswordError" class="error-message"></div>
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <p class="error" style="color: rgb(237, 23, 23)"></p>
+            <p class="done" style="color: rgb(2, 156, 2);"></p>
+
+            <button type="submit" class="button">რეგისტრაცია</button>
+
+            <div class="login_signup">გაქვთ ანგარიში? გაიარეთ <a href="#" id="login">ავტორიზაცია</a></div>
+          </form>
+        </div>
+        <div class="loader" id="loader2"></div>
+      </div>
+      <div class="title">
+        <h1 class="primary_title">განვითარდი და განავითარე!</h1>
+        <h3 class="second_title">მომავალი ლიდერების აღზრდა ტექნოლოგიაში</h3>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <i class="uil uil-java-script"></i>
+      <p class="footer_text">Coding Lab</p>
+    </footer>
+  </div>
+</body>
+<script src="scripts/main.js"></script>
+<script src="scripts/loginHandling.js"></script>
+
+</html>

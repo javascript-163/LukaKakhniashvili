@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS კურსი</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script src="https://kit.fontawesome.com/1f82d9d6d9.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <a href="dashboard.html" class="nav_logo">CodingLab</a>
+
+                <ul class="nav_items">
+                    <li class="nav_item">
+                        <a href="dashboard.html" class="nav_link">მთავარი</a>
+                    </li>
+                    <li class="nav_item dropdown">
+                        <a href="testPage.html" class="nav_link active">კურსები</a>
+                        <div class="dropdown-content">
+                            <ul class="dropdown-content">
+                                <li><a href="testPage.html">HTML & CSS & JS</a></li>
+                                <li><a href="jsCourse.html">Javascript</a></li>
+                                <li><a href="testPage.html">Python</a></li>
+                                <li><a href="testPage.html">C#</a></li>
+                                <li><a href="testPage.html">Java</a></li>
+                                <li><a href="testPage.html">PHP</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav_item">
+                        <a href="contact.html" class="nav_link">კონტაქტი</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="about.html" class="nav_link">ჩვენს შესახებ</a>
+                    </li>
+                </ul>
+                <div id="user-button" class="user-button">
+                    <div class="user-info">
+                        <i class="uil uil-user"></i>
+                        <span class="username" id="dashboard_username"></span>
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div id="dropdown-menu" class="dropdown-menu">
+                        <ul>
+                            <li><a href="#" class="disabled">პარამეტრები</a></li>
+                            <li><a href="index.html">გამოსვლა</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="language-changer">
+                <select id="language-select">
+                    <option value="ge" selected style="color: #000;">GE</option>
+                    <option value="en" style="color: #000;" disabled>EN</option>
+                </select>
+            </div>
+        </header>
+
+        <div class="js_course_countainer">
+            <div class="js_course_title">
+                <h1 class="js_course_h1">Front-End დეველოპმენტის კურსი - JavaScript</h2>
+                    <h3 class="js_course_h3">კურსის შესახებ:</h3>
+            </div>
+            <div class="course_details">
+                <p>
+                    <span>შეხვედრების რაოდენობა: </span> <br> 10 შეხვედრა (20 გაკვეთილი)
+                </p>
+                <p>
+                    <span>შეხვედრის ხანგრძლივობა: </span> <br> 2 საათი
+                </p>
+                <p>
+                    <span>მსმენელების მაქსიმალური რაოდენობა: </span> <br>15 მსმენელი
+                </p>
+                <p>
+                    <span>სასწავლო კურსის ლექტორი: </span> <br> გიორგი ბერიძე
+                </p>
+                <p>
+                    <span>სასწავლო კურსის ანოტაცია: </span> <br> დღეისთვის JavaScript არის ერთ-ერთი მოთხოვნადი და მოქნილი
+                    დაპროგრამების ენა, რომელიც გამოიყენება მრავალ სფეროში. JavaScript-ის მეშვეობით შესაძლებელია
+                    ინტერაქტიული
+                    ვებ გვერდების შექმნა, სერვერთან მოთხოვნების გაგზავნის გარეშე, რაც იმას ნიშნავს, რომ ამ დაპროგრამების
+                    ენის მეშვეობით შეიძლება შეიქმნას დინამიური ვებ სისტემები. პრაქტიკულად ყველა თანამედროვე ვებ
+                    სისტემაში
+                    გამოიყენება JavaScript დაპროგრამების ენა და მასთან დაკავშირებული ტექნოლოგიები.
+                </p>
+                <p>
+                    <span>რას ისწავლით ამ კურსის ფარგლებში? </span> <br> სასწავლო კურსის ფარგლებში მსმენელები შეისწავლიან
+                    JavaScript-ის ძირითად კონსტრუქციებს, ციკლებს, მასივებს, ფუნქციებს, ლოგიკურ ოპერაციებს და
+                    დოკუმენტების
+                    ობიექტების მოდელებს. ამასთან ერთად, სასწავლო კურსის ფარგლებში მსმენელები შეისწავლიან JavaScript - ის
+                    ერთ-ერთ გავრცელებულ ბიბლიოთეკის- jQuery-ის ელემენტებს. ასევე, კურსის ფარგლებში იქნება განხილული
+                    ისეთი
+                    ვებ ტექნოლოგიები როგორიცაა JSON და Ajax.
+                </p>
+                <p>
+                    <span>რას შეძლებთ კურსის დასრულების შემდეგ? </span> <br> 
+                <ul class="js_course_ul">
+                    <li>JavaScript ცვლადებთან და მონაცემთა ტიპებთან მუშაობას;</li>
+                    <li>JavaScript ოპერატორებთან მუშაობას;</li>
+                    <li>JavaScript ობიექტების და მასივების გამოყენებას;</li>
+                    <li>JavaScript ფუნქციების და მეთოდების განსაზღვრებას;</li>
+                    <li>Document Object Model (DOM) - ის აღწერას;</li>
+                    <li>ვებ გვერდის მოვლენების შექმნას;</li>
+                    <li>JSON და Ajax ტექნოლოგიების გამოყენებას.</li>
+                </ul>
+                </p>
+                <p class="jsCourse_urgent_message">
+                    კურსზე დასწრებისთვის საჭიროა HTML / CSS - ის საბაზისო დონეზე ცოდნა! <br>
+                </p>
+                <p>
+                    <span>ჩატარების ტიპი:</span> <br> Online
+                </p>
+                <p>
+                    <span>კურსის საფასური:</span> <br> 450 ლარი
+                </p>
+                <a href="jsCourseRegistration.html">
+                <button class="js_course_register">რეგისტრაცია</button>
+            </a>
+            </div>
+        </div>
+
+        <footer>
+            <i class="uil uil-java-script"></i>
+            <p class="footer_text">Coding Lab</p>
+        </footer>
+    </div>
+
+    <script src="scripts/dashboard.js"></script>
+    <script src="scripts/testPage.js"></script>
+</body>
+
+</html>
